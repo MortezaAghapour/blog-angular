@@ -1,0 +1,38 @@
+<div class="flat-slider container-fuild">
+  <div class="row">
+    <div class="mark-slide">
+      <img src="src/assets/img/mark-icon-slide.png" alt="images" />
+    </div>
+
+    <div class="swiper-container mainslider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slider-st-1" *ngFor="let slider of sliders">
+          <div class="content-slider-left text-white">
+      
+            <h2 class="title-slider section-65px-montserrat">
+                {{slider.title}}
+            </h2>
+            <p class="desc-slider">
+                {{slider.description}}
+            </p>
+            <div class="button-slider">
+              <a *nfIf="slider.url!=''"
+                href="{{slider.url}}"
+                class="button-footer arrow-btn btn-st style-2"
+                >مشاهده</a
+              >
+            </div>
+          </div>
+          <div class="content-slider-right">
+            <img src="{{slider.image}}" alt="images" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-slide-button">
+      <button class="clone-main-btn-prev"></button>
+      <button class="clone-main-btn-next"></button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<header id="site-header">
+  <div id="site-header-inner">
+    <div class="wrap-inner clearfix">
+      <div id="site-logo" class="clearfix">
+        <div id="site-log-inner">
+          <a [routerLink]="['/home']" rel="home" class="main-logo">
+            <img src="{{logoModel.logo}}" alt="images" />
+          </a>
+        </div>
+      </div>
+
+      <div class="mobile-button">
+        <span></span>
+      </div>
+
+      <nav id="main-nav" class="main-nav">
+        <ul id="menu-primary-menu" class="menu">
+
+          <li class="menu-item" routerLinkActive="current-menu-item">
+            <a [routerLink]="['/home']">خانه</a>
+          </li> 
+          <li class="menu-item" routerLinkActive="current-menu-item">
+            <a [routerLink]="['/blogs']">بلاگ</a>
+          </li> 
+          <li class="menu-item" routerLinkActive="current-menu-item">
+            <a [routerLink]="['/about']">درباره من</a>
+          </li> 
+          <li class="menu-item" routerLinkActive="current-menu-item">
+            <a [routerLink]="['/contactUs']">تماس با ما</a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+   
+  </div>
+</header>

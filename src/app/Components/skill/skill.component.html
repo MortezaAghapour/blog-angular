@@ -1,0 +1,32 @@
+<section class="flat-about-skill wow fadeInDown">
+  <div class="container">
+    <div class="row">
+      <app-skill-text></app-skill-text>
+
+      <div class="col-md-4">
+        <div class="skill-box-2">
+          <span class="icon-services icon-development1 font-size-icon"></span>
+          <h3 class="section-20px-montserrat margin-top-13 margin-bottom-35">
+            مهارت ها
+          </h3>
+          <ng-container *ngFor="let skill of skills">
+            <div class="label-progress margin-bottom-5 text-white">
+              <h4 class="section-14px-regular-montserrat">{{skill.name}}</h4>
+              <h4 class="section-14px-regular font-weight-500">{{skill.percentage}}%</h4>
+            </div>
+            <div
+              class="progress skill-progress margin-bottom-15"
+              style="height: 6px"
+            >
+              <div
+                class="progress-bar progress-animated"
+                [ngStyle] = "{'width':skill.percentage+'%' , 'height':'6px'}"                 
+                role="progressbar"
+              ></div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

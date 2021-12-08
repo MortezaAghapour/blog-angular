@@ -5,9 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopOfSiteComponent } from './Components/top-of-site/top-of-site.component';
 import { PreLoaderComponent } from './Components/pre-loader/pre-loader/pre-loader.component';
-import { SiteHeaderComponent } from './Components/site-header/site-header/site-header.component';
+import { SiteHeaderComponent } from './Components/site-header/site-header.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { SliderComponent } from './Components/slider/slider.component';
+import { SkillComponent } from './Components/skill/skill.component';
+import { SkillTextComponent } from './Components/skill-text/skill-text.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { SliderComponent } from './Components/slider/slider.component';
     PreLoaderComponent,
     SiteHeaderComponent,
     HeaderComponent,
-    SliderComponent
+    SliderComponent,
+    SkillComponent,
+    SkillTextComponent
   ],
   imports: [
     BrowserModule,
